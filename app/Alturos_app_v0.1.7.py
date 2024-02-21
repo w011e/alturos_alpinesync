@@ -101,7 +101,7 @@ As skiers navigate the slopes of the world's ski resorts, their experiences have
 Alturos Destinations specializes in crafting and implementing state-of-the-art digitalization strategies that redefine the landscape of tourism. The Skiline App revolutionizes the skiing experience by capturing and analyzing skiers' data to provide personalized statistics and memories of their mountain adventures.
 
 #### The Business Challenge
-Eliminate the need for manual lift ticket scanning, particularly in instances where scanning machines are unavailable.  
+To provide an alternative to existing manual lift ticket scanning, particularly in instances where scanning machines are unavailable.
 
 #### The Idea
 Utilize sensor data from skier’s mobile devices to automatically track ski-lift usage within the Alturos Skiline mobile app. This can serve as an additional way to collect data when ticket scanners are inoperational, and could potentially replace them altogether. These machine learning algorithms will enable real-time data analysis on mobile devices and differentiate skier’s utilization of various ski-lifts.              
@@ -123,8 +123,6 @@ The incorporation of mapping features by leveraging Google Maps APIs and continu
 
 - Model training and validation using datasets from diverse geographical areas
 - Validation of the pipeline with live data input
-- Integration of logging functionalities into functions
-- Implementation of anticipated user experience enhancements within the Streamlit application
 - Implementation of a clustering algorithm for grouping lift rides based on their origin and destination points
 
 
