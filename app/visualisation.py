@@ -123,8 +123,8 @@ class Mapping:
         # Create a map centered on the mean latitude and longitude
         map_center = [df['Lat'].mean(), df['Long'].mean()]
         tracking_map = folium.Map(location=map_center, zoom_start=zoom_start,
-                                  tiles='https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png', 
-                                  attr='Map data © OpenStreetMap contributors, CC-BY-SA, Tiles by Stamen Design', 
+                                #   tiles='https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png', 
+                                #   attr='Map data © OpenStreetMap contributors, CC-BY-SA, Tiles by Stamen Design', 
                                   width=700, height=700, 
                                    )
 
