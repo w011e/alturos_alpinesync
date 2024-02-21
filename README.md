@@ -50,20 +50,17 @@ development of ML prediction models, and utilization of clustering algorithms to
 - Access to Google API for location services.
 - App to track data (if new data is to be captured and analized)
 
-## How to Work with the Repo
-Instructions on setting up the development environment (including the environment.yml file).
-Guidelines for contributing to the app development and data analysis pipeline
-Guidelines to
-how to label data for supervised learning (binary classification or more)
-train models on more data
-test functions with prediction pipeline notebook
-use the streamlit app
-Detailed steps for running simulations and using the prediction models.
+## How to Work with the Alturos AlpineSync Repository
+- Environment: Create an environment by installing the dependencies from the requirements.txt file. This will allow you to run all the notebooks and be able to analyse data and create predictions. 
+- App: You can run and test the app showcasing our results [AlpineSync App](https://alpinesync.streamlit.app/)
+- Folders: 
+    - App: Find all necessary scripts for the app. 
+    - Data: This includes images for the app, readme as well as raw and labelled data for training and testing the model. Moreover, this includes the lifts_db for naming lifts. 
+    - Models: Find all our trained Random Forrest Classifier algorithms in here. You can import them easily using the Joblib library. 
+   - Notebooks: Find all relevant Jupyter Notebooks on labelling data, training and testing a RFC, reformatting new data, as well as the full data pipeline which is at work inside of our app. Please note that these notebooks feature many inline comments explaining the logic. Moreover, you will find insights into other practices we have been doing during this project. 
 
-Idea ... include this somewhere or make this a separate point for the ageinda i.e. "App"
-summarise different scripts we have come up for the app, i.e., lift detection, ux stuff etc?
-- pipeline schematic
-- ![alt text](data/images/pipeline_schematic.png)
+__Data Pipeline Schematic__
+![alt text](data/images/pipeline_schematic.png)
 
 ## Potential next steps 
 - Train and test models on more data from different regions
@@ -82,12 +79,6 @@ try pipeline with real time data input (no simulation )
 - Visualization of ski-lift usage over time. 
 - "on lift" event recognition. ![alt text](data/images/On_lift_event_labeling.png)
 
-## How to Work with the Alturos AlpineSync Repository
-==============================
-- Environment:Configuring the Environment with installing ...
-- App: You can run and test the app showcasing our results [AlpineSync App](https://alpinesync.streamlit.app/)
-- Folders: 
-    - App: Find all necessary scripts for the app. 
-    - Data: This includes images for the app, readme as well as raw and labelled data for training and testing the model. Moreover, this includes the lifts_db for naming lifts. 
-    - Models: Find all our trained Random Forrest Classifier algorithms in here. You can import them easily using the Joblib library. 
-   - Notebooks: Find all relevant Jupyter Notebooks on labelling data, training and testing a RFC, reformatting new data, as well as the full data pipeline which is at work inside of our app. Moreover, you will find insights into other practices we have been doing during this project. 
+
+
+
