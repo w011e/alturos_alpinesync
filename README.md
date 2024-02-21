@@ -45,9 +45,9 @@ development of ML prediction models, and utilization of clustering algorithms to
     - Generated real time prediction simulation and visualization
     - Lift statistics generation:
         - Generated statistical insights, summaries, and devised strategies for database management related to lift activities.
+
 ## Requirements
 - Python environments with necessary libraries found in requirements.txt.
-- Access to Google API for location services.
 - App to track data (if new data is to be captured and analized)
 
 ## How to Work with the Alturos AlpineSync Repository
@@ -65,12 +65,7 @@ __Data Pipeline Schematic__
 ## Potential next steps 
 - Train and test models on more data from different regions
 try pipeline with real time data input (no simulation )
-- Add logging capability to functions
-- Include real time simulation in streamlit app
-- Add planned UX features to streamlit app
-- Mapping functionality using google maps APIs
-- Relabelling and training models v0.1.1 and v0.4.1
-
+- Improve machine learning algorithm for lift differentiation using Google Maps API
 
 ## Sample Results
 - Streamlit app link 
