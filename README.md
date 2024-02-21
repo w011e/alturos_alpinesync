@@ -1,7 +1,5 @@
 # Alturos Project
-![alt text](data/images/Alturos-logo_white.png)
-
-![alt text](https://www.alturos.com/wp-content/themes/yootheme/cache/d2/mobile_on_the_rock2-d2244e8c.webp)
+![alt text](data/images/Frontpage.png)
 
 ## General Project Abstract
 
