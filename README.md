@@ -9,10 +9,10 @@ This involved real-time data simulation,
 development of ML prediction models, and utilization of clustering algorithms to analyze and categorize lift events.
 
 ## Authors
-- Tosin Aderanti
-- Paul Biesold
-- Raphael Penayo Schwartz
-- Sebastian Rozo
+- [Tosin Aderanti](https://www.linkedin.com/in/oluwatosin-a-79551a87/)
+- [Paul Biesold](https://www.linkedin.com/in/paul-biesold/)
+- [Raphael Penayo Schwarz](https://www.linkedin.com/in/raphael-penayo-schwarz-586b65167/)
+- [Sebastian Rozo](https://www.linkedin.com/in/engiineer-sebastian-rozo/)
 
 ## Supervisors
 - Gilberto Loaker - Alturos CEO
