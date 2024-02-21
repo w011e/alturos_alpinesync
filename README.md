@@ -15,7 +15,7 @@ development of ML prediction models, and utilization of clustering algorithms to
 - [Sebastian Rozo](https://www.linkedin.com/in/engiineer-sebastian-rozo/)
 
 ## Supervisors
-- Gilberto Loaker - Alturos CEO
+- Gilberto Loaker - Alturos Chariman of the Board
 - Ekaterina Butyugina - Constructor Academy PM
 - Stephanie Sabel - Constructor Academy TA
 
