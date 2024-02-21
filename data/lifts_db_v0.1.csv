@@ -1,0 +1,10 @@
+ski_resort,lift_id,lift_name,lift_type,number_of_persons,base_station(m),top_station(m),length(m),base_latitude,base_longitude,top_latitude,top_longitude,transit_time,speed(m/s),construction_date
+Gemsstock-Andermatt,1,Gurschen-Bahn (Andermatt-Gurschenalp),Aerial tramway/Reversible ropeway,60.0,1444,2212,1822,46.63242,8.59182,46.61844,8.59836,0:03:20,10.0,1991
+Gemsstock-Andermatt,2,Gemsstock-Bahn (Gurschenalp-Gemsstock),Aerial tramway/Reversible ropeway,80.0,2212,2961,2159,46.6183,8.59869,46.6023,8.61161,0:04:00,10.0,1990
+Gemsstock-Andermatt,3,Gurschen-Flyer (Gurschengrat),High speed chairlift (detachable) with bubble,6.0,2015,2281,901,46.62462,8.59945,46.61684,8.59712,0:03:20,5.0,2015
+Gemsstock-Andermatt,4,Lutersee-Lift,T-bar,,2026,2398,1152,46.62291,8.60324,46.6166,8.61499,0:08:30,2.5,1975
+Andermatt/​Oberalp/​Sedrun,5,Gütsch-Express 1 (Andermatt–Nätschen),Gondola lift (monocable circulating ropeway),8.0,1441,1832,1080,46.63781,8.59542,46.64268,8.60712,0:03:20,6.0,2017
+Andermatt/​Oberalp/​Sedrun,6,Gütsch-Express 2 (Nätschen-Gütsch),Gondola lift (monocable circulating ropeway),8.0,1832,2367,1902,46.64268,8.60712,46.65618,8.62127,0:05:50,6.0,2017
+Andermatt/​Oberalp/​Sedrun,7,Gütsch-Flyer,High speed chairlift (detachable) with bubble,6.0,2160,2344,598,46.6528,8.62766,46.65639,8.622,0:02:10,5.0,2016
+Andermatt/​Oberalp/​Sedrun,8,Lutersee-Flyer,High speed chairlift (detachable) with bubble,6.0,2135,2400,881,46.65602,8.63412,46.66339,8.63733,0:03:10,5.0,2017
+Andermatt/​Oberalp/​Sedrun,9,Schneehüenerstock-Flyer,High speed chairlift (detachable) with bubble,6.0,2165,2600,1053,46.661,8.65226,46.66954,8.65565,0:03:50,5.0,2017
