@@ -91,55 +91,107 @@ with tab1:
    
     #header image with lift
     st.image(lift_pic_path,use_column_width=True)
-    st.markdown('''
-## AlpineSync 
-### Elevating the Ski Experience with Data Science
 
-As skiers navigate the slopes of the world's ski resorts, their experiences have evolved into data-centric adventures. They are seeking a deeper understanding of their performance by utilizing technology to access detailed analytics and performance metrics. This implies monitoring progress, evaluating achievements, and capturing key moments.         
-''')
-      
-    # Download presentation slides 
-    with open(presentation_slides, "rb") as pdf_file:
-                PDFbyte = pdf_file.read()
+    english_version, german_version = st.columns(2)
 
-    st.download_button(label="Download Presentation", 
-        data=PDFbyte,
-        file_name="AlpineSync_Presentation_Slides.pdf",
-        mime='application/octet-stream')
+    if english_version.button("Text in English"):
+        st.markdown('''
+    ## AlpineSync 
+    ### Elevating the Ski Experience with Data Science
 
-    st.markdown('''      
+    As skiers navigate the slopes of the world's ski resorts, their experiences have evolved into data-centric adventures. They are seeking a deeper understanding of their performance by utilizing technology to access detailed analytics and performance metrics. This implies monitoring progress, evaluating achievements, and capturing key moments.         
+    ''')
+        # Download presentation slides 
+        with open(presentation_slides, "rb") as pdf_file:
+                    PDFbyte = pdf_file.read()
 
-#### The Company
-Alturos Destinations specializes in crafting and implementing state-of-the-art digitalization strategies that redefine the landscape of tourism. The Skiline App revolutionizes the skiing experience by capturing and analyzing skiers' data to provide personalized statistics and memories of their mountain adventures.
+        st.download_button(label="Download Presentation", 
+            data=PDFbyte,
+            file_name="AlpineSync_Presentation_Slides.pdf",
+            mime='application/octet-stream')
 
-#### The Business Challenge
-To provide an alternative to existing manual lift ticket scanning, particularly in instances where scanning machines are unavailable.
+        st.markdown('''      
 
-#### The Idea
-Utilize sensor data from skier’s mobile devices to automatically track ski-lift usage within the Alturos Skiline mobile app. This can serve as an additional way to collect data when ticket scanners are inoperational, and could potentially replace them altogether. These machine learning algorithms will enable real-time data analysis on mobile devices and differentiate skier’s utilization of various ski-lifts.              
+    #### The Company
+    Alturos Destinations specializes in crafting and implementing state-of-the-art digitalization strategies that redefine the landscape of tourism. The Skiline App revolutionizes the skiing experience by capturing and analyzing skiers' data to provide personalized statistics and memories of their mountain adventures.
 
-#### The Approach
-Our endeavor focuses on harnessing sensor data from mobile devices to accurately identify ski lift usage.
+    #### The Business Challenge
+    To provide an alternative to existing manual lift ticket scanning, particularly in instances where scanning machines are unavailable.
 
-- __Incoming Data__: We utilized sensor data from two popular mobile apps: Sensor Logger for iOS devices and Sensors Toolbox for Android devices. This data formed the foundation for our lift detection algorithm.
-- __Data Management__: To train our models effectively, we utilized labeled data for supervised machine learning from 12 different skiing sessions and two locations. Datasets were then prepared by incorporating outlier detection and engineered features to maximize predictive performance.
-- __Modeling__: We explored various machine learning models, prioritizing accuracy metrics and selecting a Random Forest Classifier as the most suitable model for lift detection.
-- __Post-Processing__: We achieved a 96% accuracy rate with our Random Forest Classifier (RFC) model. Through the implementation of post-processing strategies, we enhanced the continuity of classified events and minimized misclassifications. These refinements contribute to a more consistent user experience and improve overall accuracy.
-- __UX Development__: Our focus extended beyond algorithmic development to user experience enhancement. We plotted and mapped ski-lift events, simulated real-time predictions, and generated lift usage statistics.
+    #### The Idea
+    Utilize sensor data from skier’s mobile devices to automatically track ski-lift usage within the Alturos Skiline mobile app. This can serve as an additional way to collect data when ticket scanners are inoperational, and could potentially replace them altogether. These machine learning algorithms will enable real-time data analysis on mobile devices and differentiate skier’s utilization of various ski-lifts.              
 
-#### The AlpineSync App
-This App serves as a Proof of Concept (POC) platform for visualization and interaction with our trained algorithms and other features.
+    #### The Approach
+    Our endeavor focuses on harnessing sensor data from mobile devices to accurately identify ski lift usage.
 
-#### The Future Vision
-The incorporation of mapping features by leveraging Google Maps APIs and continual refinement of the models remain key objectives. Future initiatives may include:
+    - __Incoming Data__: We utilized sensor data from two popular mobile apps: Sensor Logger for iOS devices and Sensors Toolbox for Android devices. This data formed the foundation for our lift detection algorithm.
+    - __Data Management__: To train our models effectively, we utilized labeled data for supervised machine learning from 12 different skiing sessions and two locations. Datasets were then prepared by incorporating outlier detection and engineered features to maximize predictive performance.
+    - __Modeling__: We explored various machine learning models, prioritizing accuracy metrics and selecting a Random Forest Classifier as the most suitable model for lift detection.
+    - __Post-Processing__: We achieved a 96% accuracy rate with our Random Forest Classifier (RFC) model. Through the implementation of post-processing strategies, we enhanced the continuity of classified events and minimized misclassifications. These refinements contribute to a more consistent user experience and improve overall accuracy.
+    - __UX Development__: Our focus extended beyond algorithmic development to user experience enhancement. We plotted and mapped ski-lift events, simulated real-time predictions, and generated lift usage statistics.
 
-- Model training and validation using datasets from diverse geographical areas
-- Validation of the pipeline with live data input
-- Implementation of a clustering algorithm for grouping lift rides based on their origin and destination points
+    #### The AlpineSync App
+    This App serves as a Proof of Concept (POC) platform for visualization and interaction with our trained algorithms and other features.
+
+    #### The Future Vision
+    The incorporation of mapping features by leveraging Google Maps APIs and continual refinement of the models remain key objectives. Future initiatives may include:
+
+    - Model training and validation using datasets from diverse geographical areas
+    - Validation of the pipeline with live data input
+    - Implementation of a clustering algorithm for grouping lift rides based on their origin and destination points
+    ''')
+        
+    if german_version.button("Text in Deutsch"):
+        st.markdown('''
+    ## AlpineSync 
+    ### Verbesserung des Skierlebnisses mit Data Science und Maschinellem Lernen
+
+    Skifahrer:innen erleben zunehmend, wie ihr Sport durch Daten eine neue Dimension erhält. Der Einsatz modernster Technologien ermöglicht es, einen Wintersporttag durch detaillierte Analysen der unterschiedlichen Aktivitäten zu bereichern.          
+    ''')
+        # Download presentation slides 
+        with open(presentation_slides, "rb") as pdf_file:
+                    PDFbyte = pdf_file.read()
+
+        st.download_button(label="Download der Präsentation", 
+            data=PDFbyte,
+            file_name="AlpineSync_Presentation_Slides.pdf",
+            mime='application/octet-stream')
+
+        st.markdown('''      
+
+    #### Das Unternehmen
+    Alturos Destinations ist darauf spezialisiert, Digitalisierungsstrategien für die Tourismuslandschaft zu entwickeln. Die bereits bestehende Skiline-App des Unternehmens soll mit Hilfe der AlpineSync bereichert werden.
+
+    #### Die Aufgabe
+    Zielsetzung des Projektes ist es, eine Alternative zum manuellen Scannen von Lifttickets bereitzustellen. Dies ist insbesondere dann erforderlich, wenn Scangeräte an den Skiliften nicht verfügbar sind.
+    
+    #### Die Idee
+    Sensordaten von Mobilgeräten werden mit Hilfe von Algorithmen des maschinellen Lernens analysiert. So werden aus den verschiedenen aufgezeichneten Bewegungsformen in Echtzeit Fahrten mit dem Ski-Lift herausgefiltert und klassifiziert. Langfristig vereinfacht dies beispielsweise den Betrieb von Skiliften, indem Tickets nicht mehr manuell gescannt werden müssen. 
+    
+    #### Die Realisierung
+
+    - __Datenaufzeichnung__: Für die Erfassung von Sensor- und Bewegungsdaten werden die Apps Sensor Logger (iOS) und Sensors Toolbox (Android) verwendet. Für das Projekt standen zwölf Aufzeichnungen aus zwei verschiedenen Skigebieten zur Verfügung.
+    - __Datenaufbereitung__: Für das Training des AlpineSync-Algorithmus wurden die Daten durch Labeling, Resampling, Outlier Detection und Feature Engineering für Supervised Learning aufbereitet. 
+    - __Maschinelles Lernen__: Insgesamt hat sich der Random Forest Classifier (RFC) mit Genauigkeits-Scores von über 96% als das geeignetste Modell für die Lift-Erkennung bewährt.
+    - __Nachverarbeitung__: In der Nachbereitung der Daten werden die Genauigkeit der Klassifizierung verbessert und Fehler minimiert. 
+    - __User Experience__: Das Visualisieren und Kartieren von Skilift-Ereignissen sowie  automatisierte Statistiken zur Nutzung der Skilifte sind neue Features für eine Weiterentwicklung der Alturos Skiline-App
+
+    #### Die AlpineSync App
+    Diese App dient als Plattform zur Visualisierung und Interaktion mit den Ergebnissen des Projektes
+                    
+    #### Die Zukunftsvision
+    Die Integration von Kartierungsfunktionen mit Google Maps APIs und die kontinuierliche Verbesserung der Modelle sind weiterhin zentrale Ziele. Nächste Schritte beinhalten:
+
+    - Validierung der Algorithmen mit Datensätzen aus unterschiedlichen geografischen Gebieten
+    - Validierung der Funktionen mit Live-Dateneingabe
+    - Verbesserung des Clustering-Algorithmus zur Gruppierung von Liftfahrten basierend auf ihren Ursprungs- und Zielorten
 
 
 
-''')
+    ''')
+
+
+
 # Script for tab 2
 with tab2:
     st.header("Analysis")
