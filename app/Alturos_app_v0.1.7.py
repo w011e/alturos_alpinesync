@@ -30,7 +30,7 @@ data_paths = {
     }
 
 model_path = os.path.join(parent_dir, "models", "rf_v_0.4.pkl")
-alturos_logo_path = os.path.join(parent_dir, "data", "images", "Alturos-logo_white.png")
+alturos_logo_path = os.path.join(parent_dir, "data", "images", "Alturos-logo_black.png")
 constructor_logo_path = os.path.join(parent_dir, "data", "images", "constructor_academy_logo.png")
 header_image_path = os.path.join(parent_dir, "data", "images", "Frontpage.png")
 legend_path =os.path.join(parent_dir, "data", "images", "Map_legend.png")
@@ -469,7 +469,7 @@ with tab5:
                     __Thanks to:__
                     - Our families for putting up with the long hours spent on this project 
                     - Ekaterina Butyugina and Stephanie Sabel for supporting us throughout the project 
-                    - Gilberto Loacker from Alturos Destination for providing the project and hitting the slopes for us
+                    - Gilberto Loacker from Alturos Destinations for providing the project and hitting the slopes for us
                     
                     ''')
     
