@@ -36,6 +36,7 @@ header_image_path = os.path.join(parent_dir, "data", "images", "Frontpage.png")
 legend_path =os.path.join(parent_dir, "data", "images", "Map_legend.png")
 lifts_db_path = os.path.join(parent_dir, "data", "lifts_db_v0.1.csv")
 lift_pic_path = os.path.join(parent_dir, "data", "images", "pejo_skiing_chairlift_trentino.jpg")
+presentation_slides = os.path.join(parent_dir, "AlpineSync_Presentation_Slides.pdf")
 
 # Team profile pics
 Tosin_profile_path = os.path.join(parent_dir, "data", "images", "Profile_Tosin.png")
@@ -91,11 +92,22 @@ with tab1:
     #header image with lift
     st.image(lift_pic_path,use_column_width=True)
     st.markdown('''
-
 ## AlpineSync 
 ### Elevating the Ski Experience with Data Science
 
-As skiers navigate the slopes of the world's ski resorts, their experiences have evolved into data-centric adventures. They are seeking a deeper understanding of their performance by utilizing technology to access detailed analytics and performance metrics. This implies monitoring progress, evaluating achievements, and capturing key moments.
+As skiers navigate the slopes of the world's ski resorts, their experiences have evolved into data-centric adventures. They are seeking a deeper understanding of their performance by utilizing technology to access detailed analytics and performance metrics. This implies monitoring progress, evaluating achievements, and capturing key moments.         
+''')
+      
+    # Download presentation slides 
+    with open(presentation_slides, "rb") as pdf_file:
+                PDFbyte = pdf_file.read()
+
+    st.download_button(label="Download Presentation", 
+        data=PDFbyte,
+        file_name="AlpineSync_Presentation_Slides.pdf",
+        mime='application/octet-stream')
+
+    st.markdown('''      
 
 #### The Company
 Alturos Destinations specializes in crafting and implementing state-of-the-art digitalization strategies that redefine the landscape of tourism. The Skiline App revolutionizes the skiing experience by capturing and analyzing skiers' data to provide personalized statistics and memories of their mountain adventures.
