@@ -146,7 +146,7 @@ with tab1:
     ## AlpineSync 
     ### Verbesserung des Skierlebnisses mit Data Science und Maschinellem Lernen
 
-    Skifahrer:innen erleben zunehmend, wie ihr Sport durch Daten eine neue Dimension erhält. Der Einsatz modernster Technologien ermöglicht es, einen Wintersporttag durch detaillierte Analysen der unterschiedlichen Aktivitäten zu bereichern.          
+    SkifahrerInnen erleben zunehmend, wie ihr Sport durch Daten eine neue Dimension erhält. Der Einsatz modernster Technologien ermöglicht es, einen Wintersporttag durch detaillierte Analysen der unterschiedlichen Aktivitäten zu bereichern.          
     ''')
         # Download presentation slides 
         with open(presentation_slides, "rb") as pdf_file:
